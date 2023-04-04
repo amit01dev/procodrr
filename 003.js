@@ -281,6 +281,8 @@
 
 // fruits.forEach( (fruit) => {return fruit})
 
+
+// map method ----******
 // part -1
 // const months = ['janu','febru','march','april']
 
@@ -394,7 +396,7 @@
 //             return 'empty'
 
 //         }
-        
+
 //     }
 // })
 // console.log(value);
@@ -427,4 +429,185 @@
 // task -3 for me 
 //  filter out adult(=>18) students  from this below array and store an array ---
 
-const student = 
+const students = [
+    {
+        name: 'amit',
+        age: 13
+    },
+    {
+        name: 'Neha',
+        age: 18
+    },
+    {
+        name: 'golu',
+        age: 33
+    },
+    {
+        name: 'menu',
+        age: 55
+    },
+    {
+        name: 'pinki',
+        age: 76
+    },
+    {
+        name: 'gudsa',
+        age: 6
+    }
+]
+// const task = student.filter((value, index, array1)=> {
+//     // console.log();
+//     return value.age >=18;
+// })
+// console.log(task);
+
+
+// task -4 ****** ----------------- chaining of array method ---
+// print only names which are adults from the above example.
+
+// step -1
+// const task = students.filter((student)=> {
+//     return student.age >=18;
+// })
+// console.log(task);
+
+// in the above we access adult student. 
+// now in below we access name of these student.
+
+// step -2
+
+// const adultName = task.map((name1)=> {
+//     return name1.name
+
+
+// })
+// console.log(adultName);
+
+
+// shortcut of step -1 and step -2 ----********
+
+// const  task = students.filter((student) => {
+//     return student.age >=18;
+// }).map((name1) => {
+//     return name1.name
+// })
+// console.log(task);
+
+
+// if we want to print only the name which has "N " then this below code is --------*****
+
+// const  task = students.filter((student) => {
+//     return student.age >=18;
+// }).map((name1) => {
+//     return name1.name
+// }).filter((name2)=> {
+//     return name2.includes('N') })
+
+// console.log(task);
+
+
+
+// new method of array ---- ****** reduce - method ---
+
+// const number = [1,2,3,4]
+
+// const sum = number.reduce((accumeletor, current, index, array1 )=> {
+    // console.log(current, index);
+    // console.log(accumeletor);
+//     return current
+// })
+// console.log(sum);
+
+// explaination of reduce method ---*****
+// explained in notebook
+
+
+
+// another array method ----***** some array method ---
+
+// const num = [2,4,6,7]
+// const someMethod = num.some((number, index) => {
+
+//     console.log(number);
+//     if(number % 2 === 1){
+//         console.log(index);
+//     }
+//     return number % 2 === 1
+// })
+
+// console.log(someMethod);
+
+
+// another array method -----****** every method ---
+
+// const num = [2,4,6,7]
+
+// const everyMethod = num.every((number) => {
+//     // console.log(number);
+//     return number % 2 === 0
+    
+// })
+
+// console.log(everyMethod);
+
+
+// argument keyword ------******* new topic
+// this keyword is bydefault is present in function except arrow function.
+// it give all the value which we pass in the function ()
+
+// one property of this keyword -----
+// argument.length
+
+
+// function  add (a,b){
+//     console.log(arguments);
+//     console.log(a+b);
+// }
+
+// task -1 **** create a function in which whatever value we give it will sum it with the help of argument keyword.
+
+// function add (){
+//     let sum = 0
+    
+//     for(var i = 0; i< arguments.length;i++){
+//         (sum = sum + arguments[i])
+//     }
+//     return sum
+
+// }
+
+// another task ***-------
+// the argument keyword is not an array, it is an object.
+// the task is that convert this argument keyword into an array ----
+
+
+// method -1
+// using Array.from()
+
+
+// function add(){
+//     let convert = Array.from(arguments)
+//     console.log(convert);
+//  const add = convert.reduce((value, current) => {
+//     return value + current 
+//  })
+//  return add   
+// }
+
+
+
+
+// method -2
+// using spread operator
+function add(){
+    let convert = [...arguments]
+ const add = convert.reduce((value, current) => {
+    return value + current 
+ })
+ return add   
+}
+
+
+
+
+
