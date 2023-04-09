@@ -1,0 +1,9 @@
+.image-container{
+    text-align: center;
+
+}
+
+.image-container p {
+    margin: 0;
+    display: inline-block;
+}
