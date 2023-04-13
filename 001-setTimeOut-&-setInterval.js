@@ -2,14 +2,31 @@
 
 // setTimeout()
 
-// 1. 
+// 1. it is not a part of core js it is provided from browse, it is not present in ecma script sepecification.
 
-// 2.    whatever we give inside this it is treated as a js code , if we give 'hi' inside this then it is giving error b/c it is not a code.
+// 1 it is a part of webAPI , browser give up this and we can use this.
 
-// 3.  if we give simple 'hi' with ' ' then it is searching hi as a variable in the js and if it find then it not giving error but also it is not printing this value in the console.
+// 1. it is a function setTimtOut()
+
+// 1 . when we call this function it's output is not coming from script.js file it is coming from a another file which  is -> VM0303  , b/c whatever operation it perform it is perform in this file.
+
+// 1. it pass a return value, if we want to see then we have to paste this setTimeout() into console.
+
+
+// 1. setTimeOut() is called higher order function when we pass a function inside this.
+
+
+
+
+// 2.    whatever we give inside this it is treated as a js code , if we give 'hi' inside this then it is giving error b/c it is not a code, it is a string.
+
+// 3.  if we give simple hi without ' ' then it is searching hi as a variable in the js and if it find then it not giving error but also it is not printing this value in the console.
+
+// in the above code settimeout() take first argurment in the ' ' .that's why i write hi in 'hi'
+
 
 // const hi = 'hello'
-// setTimeout('hi')
+// setTimeout(hi)
 
 
 // 4.   if we pass a string('hello1) in this function  setTimeout() then it create this string as a code , but this code is not present in the codebase so it give error.  
