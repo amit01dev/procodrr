@@ -1,5 +1,6 @@
 // new EP - 50 BOM (browser object model)-----------**************
 
+
 // location.reload()
 
 // location.href = 'index.html'
@@ -9,6 +10,8 @@
 // new EP ---- 51 DOM ( document object model) --------*********
 
 // DOM manipulation --------*****
+
+
 
 // document.body.children[1].innerText = 'this is added through console.'
 

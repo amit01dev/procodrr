@@ -230,13 +230,19 @@
 //     console.log(letter);
 // }
 
-// let object1 = {
-//     firstName : 'amit',
-//     lastName : 'kumar',
-//     age : 33,
-//     city : 'bikaner',
+let object1 = {
+    firstName : 'amit',
+    lastName : 'kumar',
+    age : 33,
+    city : 'bikaner',
 
-// }
+}
+
+for(object in object1){
+    console.log(object);
+}
+
+// this above for in is giving only key value so we should use this below Object.key(), Object.value(),Object.entries().
 
 
 //  when we deal with big data then we use this below method ----****
@@ -344,7 +350,42 @@
 //     return month.toUpperCase()
 // }))
 
+
+// task -1 ----------**********
+
+// const number =[1,2,3,4,5]
+
+// convert into double , thriple ,binaray and print it in array form
+
+
+// const output  = number.map((value)=>{
+//     return value *2
+
+// })
+// console.log(output);
+
+// const output  = number.map((value)=>{
+//     return value *3
+
+// })
+// console.log(output);
+
+
+
+// const output  = number.map((value)=>{
+//     return value.toString(2)
+
+
+// })
+// console.log(output);
+
+
+
+
 // another method in array -----------*************
+// map and filter both give array in output .*****#####
+// when we use map,filter , reduce methods then it is called functional progamming.****#####
+
 // filter method 
 
 // part-1
@@ -355,9 +396,19 @@
 
 // })
 
+// it don't return anything if we don't use return keyword and pass anything in it.
+
 // part -2
 
-// in this below it retun the default value of array or i can say it give original array as a default return , if we apply someting which is less of the original array then it give this (less ) otherwise it give the original array, 
+// as name suggeste it filter the array and then give the retun value i explian in below
+
+// 1. if we pass anything which is turthy value then it return whole original array.
+
+// 2. if we pass falsy value then it return nothing.
+
+// 3. it only pass from the array in which it is applying , means we can write a condition in return and it print only which values who are satisfired this condition which is written in the return.
+
+
 
 // const months = ['january', 'february', 'march', 'april', 'may']
 
@@ -598,14 +649,15 @@ const students = [
 
 
 // method -2
-// using spread operator
-function add(){
-    let convert = [...arguments]
- const add = convert.reduce((value, current) => {
-    return value + current 
- })
- return add   
-}
+// // using spread operator
+
+// function add(){
+//     let convert = [...arguments]
+//  const add = convert.reduce((value, current) => {
+//     return value + current 
+//  })
+//  return add   
+// }
 
 
 

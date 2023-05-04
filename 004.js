@@ -267,6 +267,28 @@
 
 // const {more : {city : newCity}} = user
 
+// another example -------*****
+
+
+// const object = {
+//     firstName : 'amit',
+//     age : 33,
+//     city : 'bikaner',
+//     other : {
+//         cast: 'bramin',
+//         gender : 'male',
+//         born :{
+//             inDay : 'yes',
+//             inNight : 'no'
+//         }
+//     }
+
+// }
+
+// const {other : {born :{inDay}}} = object 
+// console.log(inDay);
+
+
 
 // destructuring in function () , when argurment is passed  -----*******
 

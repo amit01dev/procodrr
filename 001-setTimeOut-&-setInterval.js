@@ -103,18 +103,46 @@ function a(){
 
 // if we give a() instead of a then what happend is that ---- 
 
-// first a() ---- return function return value --- which is undefined 
+// first a() ---- return -->>> function return value --- which is undefined 
 // so it is created like this --- setTimeout(undefined, 6000)
 // so it is not calling function b/c undefined is present.
 
-//  const infinite = setInterval(`console.log("hello")`, 2000)
+// to call the function we write a in settimeout()
 
+// we use arguments keyword -->> which is store all the values which is passed after 2nd parameter in settimeout() 
+
+
+
+// important question---#### 1.
+
+setTimeout('console.log("hello")',0)
+console.log('hi')
+
+// in the above code which is printing first -----
+
+// hi print first and then hello print second, b/c console.log is a syncronous code and it is run directly and settimeout is a asyncronous code which is go first in webAPI and then go to callback quue.that's the reason. 
+
+// #### 2. 
+// settimeout is run the code only once but setinterval is run the code infinity times if we don't give clearinterval()
+
+
+// setInterval()-------------------******
+
+// it is same as settimeout only difference is that is it runing infinite times if we don't give clearinterval() and in () we have to paste setinterval id.
+
+
+
+
+//  const infinite = setInterval(`console.log("hello")`, 2000)
 
 // now it become higher order function ( in below)
 
-//  const infinite = setInterval(a, 2000)
+//  const infinite = setInterval(a, 2000,'amit',44)
 
- function a(){
-    // console.log(arguments);
-    console.log('hello world !!');
-}
+
+//  function a(){
+//     // console.log(arguments);
+//     console.log('hello world !!');
+// }
+
+// clearInterval(infinite)
