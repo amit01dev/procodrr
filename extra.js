@@ -25,15 +25,15 @@
 
 //  in filter method if truly value is present in the return then it print all the element in an array as a return and if false value is present in return then it doesn't print anything, it only show an empty array.
 
-const months = [ 'january','february','march','april','may']
-const countMonth = months.filter((month, index, array1)=> {
-    console.log(month, index, array1);
+// const months = [ 'january','february','march','april','may']
+// const countMonth = months.filter((month, index, array1)=> {
+//     console.log(month, index, array1);
     
 
 
-})
+// })
 
-console.log(countMonth);
+// console.log(countMonth);
 
 // difference b/t map and filter ---*****
 // map -----
@@ -51,3 +51,13 @@ console.log(countMonth);
 // 1. if we write anything which is truely value then it print all the element of the array on which it is applying, if falsy value is given then it print nothing and if we apply any condition then which element satisfy this condition will print and others will not print.
 
 // 2. it evaluate return value  whethere it is true or false , if true  then it print the array element which is satisfied true condition.  
+
+function factorial(n){
+    if(n===1){
+        return 1
+    }else{
+        return n* (n-1)
+    }
+}
+
+console.log(factorial(5));
